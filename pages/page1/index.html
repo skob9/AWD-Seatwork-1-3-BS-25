@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Tickets</title>
+    <link rel="stylesheet" href="../page1/assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">SKOB Tickets</div>
+        <div class="menu">
+            <a href="../../index.html">Home</a>
+            <a href="../page1/index.html" class="active">Buy Tickets</a>
+        </div>
+    </nav>
+
+    <div class="booking-card">
+        <h1>Movie Seat Booking</h1>
+
+        <label for="movie">Select Movie:</label>
+        <select id="movie">
+            <option value="" disabled selected>--Select--</option>
+            <option value="petrang-kabayo">Petrang Kabayo</option>
+            <option value="enteng-kabisote">Enteng Kabisote</option>
+        </select>
+
+        <label for="movieTime">Select Movie Time:</label>
+        <select id="movieTime">
+            <option value="" disabled selected>--Select--</option>
+            <option value="2:00 PM">2:00 PM</option>
+            <option value="5:00 PM">5:00 PM</option>
+            <option value="8:00 PM">8:00 PM</option>
+        </select>
+
+        <label for="movieDate">Select Date:</label>
+        <input class="Date2" type="date" id="movieDate">
+
+        <p>Select your seats:</p>
+        <div class="seat-label">
+            <div class="label-item">
+                <div class="seat"></div>
+                <span>Available</span>
+            </div>
+            <div class="label-item">
+                <div class="seat reserved"></div>
+                <span>Reserved</span>
+            </div>
+            <div class="label-item">
+                <div class="seat selected2"></div>
+                <span>Selected</span>
+            </div>
+        </div>
+
+        <div class="screen">
+            <span class="screen-text">SCREEN</span>
+        </div>
+
+        <div class="seating-layout">
+
+            <div class="seating-section left">
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>
+
+
+            <div class="seating-section center">
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>
+
+
+            <div class="seating-section right">
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="paymentModal" class="modal">
+            <div class="modal-content">
+                <h2>Select Payment Method</h2>
+                <label class="choice"><input type="radio" name="payment" value="Cash"> Cash</label><br>
+                <label class="choice"><input type="radio" name="payment" value="Credit Card"> Credit Card</label><br>
+                <label class="choice"><input type="radio" name="payment" value="GCash"> GCash</label><br>
+
+                <button id="confirmPayment">Confirm Payment</button>
+                <button id="closeModal">Cancel</button>
+            </div>
+        </div>
+
+        <p class="summary">You have selected <span id="count">0</span> seats for a total price of ₱<span id="total">0</span></p>
+        <p id="selected-seats">Selected seats: None</p>
+
+        <button id="bookNow">Book Now</button>
+
+
+    </div>
+    <script src="../page1/assets/js/scripts.js"></script>
+</body>
+</html>

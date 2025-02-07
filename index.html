@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Reservation</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">SKOB Tickets</div>
+        <div class="menu">
+            <a href="./index.html" class="active">Home</a>
+            <a href="./pages/page1/index.html">Buy Tickets</a>
+            <button id="logoutBtn">Log out</button>
+        </div>
+    </nav>
+
+    <section class="h-text">
+        <h1>Now Showing</h1>
+
+        <div class="card-poster">
+            <div class="poster">
+                <img src="./assets/img/pkposter1.jpg">
+                <video class="trailer">
+                    <source src="./assets/img/Pktrailer.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="poster">
+                <img src="./assets/img/ekposter2.png">
+                <video class="trailer">
+                    <source src="./assets/img/Ektrailer.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <br><h3>Get Your Tickets Now!</h3>
+        <br><button class="buttonTicket" id="buyNowBtn" role="button">Buy Tickets</button>
+    </section>
+
+        <div id="authModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="authTitle">Login</h2>
+
+                <div class="auth-tabs">
+                    <span id="loginTab" class="active">Login</span>
+                    <span id="signupTab">Sign Up</span>
+                </div>
+
+                <form id="loginForm" class="auth-form">
+                    <input type="email" id="loginEmail" placeholder="Email" required>
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                    <button type="submit" class="auth-btn">Login</button>
+                </form>
+
+                <form id="signupForm" class="auth-form" style="display: none;">
+                    <input type="email" id="signupEmail" placeholder="Email" required>
+                    <input type="password" id="signupPassword" placeholder="Password" required>
+                    <button type="submit" class="auth-btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
